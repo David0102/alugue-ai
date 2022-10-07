@@ -9,7 +9,7 @@ Aluguel.register(CarroComum)
 Aluguel.register(CarroVip)
 
 catalogo = {'Gol': 111, 'Corola': 222,
-            'Celta': 333, 'Camaro': 444, 'Civic': 555, 'S10': 666, 'Fox': 777, 'HB20s': 888}
+            'Celta': 333, 'Camaro': 444, 'Civic': 555, 'S10': 666, 'Fox': 777, 'HB20': 888}
 
 alugados = {}
 

@@ -90,7 +90,6 @@ while (N != 3):
             print("\nCarro inválido!\n")
 
     if N == 3:
-        print("Programa encerrado!")
         break
     menu()
     N = int(input("Digite a opção: "))

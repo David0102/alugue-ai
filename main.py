@@ -33,7 +33,7 @@ def menu():
 menu()
 N = int(input("Digite a opção: "))
 
-while (N != 4):
+while (N != 3):
     if N == 1:
         tipo = input("Deseja alugar um carro comum ou vip: ")
         modelo = input("Digite o modelo do carro: ")
@@ -90,7 +90,7 @@ while (N != 4):
             print("\nCarro inválido!\n")
 
     if N == 3:
+        print("Programa encerrado!")
         break
-
     menu()
     N = int(input("Digite a opção: "))

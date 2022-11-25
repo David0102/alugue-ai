@@ -1,5 +1,6 @@
 import abc
 
+
 class Aluguel(abc.ABC):
 
     @abc.abstractmethod

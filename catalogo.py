@@ -1,12 +1,6 @@
 class Catalogo:
 
-    def catalogo_carros(modelo, catalogo):
-        if catalogo.get(modelo):
-            return 1
-        else:
-            return 0
-
-    def carros_alugados(modelo, catalogo):
+    def procura_carros(modelo, catalogo):
         if catalogo.get(modelo):
             return 1
         else:

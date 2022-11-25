@@ -40,8 +40,8 @@ while (N != 3):
         placa = input("Digite a placa do carro de acordo com o catálogo: ")
         tempo = int(input("Digite o tempo de aluguel do carro em horas: "))
 
-        cont = Catalogo.catalogo_carros(modelo, catalogo)
-        cont1 = Catalogo.carros_alugados(modelo, alugados)
+        cont = Catalogo.procura_carros(modelo, catalogo)
+        cont1 = Catalogo.procura_carros(modelo, alugados)
 
         if cont == 1:
             if tipo == 'comum':
@@ -77,8 +77,8 @@ while (N != 3):
     if N == 2:
         placa = input("Digite a placa do carro a ser devolvido: ")
         modelo = input("Digite o modelo do carro a ser devolvido: ")
-        cont = Catalogo.catalogo_carros(modelo, catalogo)
-        cont1 = Catalogo.carros_alugados(modelo, alugados)
+        cont = Catalogo.procura_carros(modelo, catalogo)
+        cont1 = Catalogo.procura_carros(modelo, alugados)
 
         if cont == 1:
             print("\nO carro já foi devolvido!\n")

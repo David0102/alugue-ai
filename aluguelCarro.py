@@ -2,17 +2,18 @@ import abc
 from aluguel import Aluguel
 
 
-class Carro(abc.ABC):
+class Carro(abc.ABC):  # Classe abstrata(abastração).
     def __init__(self, modelo, placa):
         self._modelo = modelo
         self._placa = placa
 
 
-class CarroComum(Carro):
+class CarroComum(Carro):  # CarroComum herda da classe Carro(Herança).
     def __init__(self, modelo, placa, tempo):
         super().__init__(modelo, placa)
         self._tempo = tempo
 
+    # Foi utilizado property e setter para fazer o encapsulamento na classe CarroComum(encapsulamento).
     @property
     def modelo(self):
         return self._modelo
@@ -37,6 +38,7 @@ class CarroComum(Carro):
     def tempo(self, tempo):
         self._tempo = tempo
 
+    # Método para calcular o valor do aluguel na classe CarroComum.
     def get_valor_aluguel(self):
         if (self._tempo > 0):
             return self._tempo * 20
@@ -44,11 +46,12 @@ class CarroComum(Carro):
             return 0
 
 
-class CarroVip(Carro):
+class CarroVip(Carro):  # CarroVip herda da classe Carro(Herança).
     def __init__(self, modelo, placa, tempo):
         super().__init__(modelo, placa)
         self._tempo = tempo
 
+    # Foi utilizado property e setter para fazer o encapsulamento na classe CarroVip(encapsulamento).
     @property
     def modelo(self):
         return self._modelo
@@ -73,6 +76,7 @@ class CarroVip(Carro):
     def tempo(self, tempo):
         self._tempo = tempo
 
+    # Método para calcular o valor do aluguel na classe CarroVip.
     def get_valor_aluguel(self):
         if (self._tempo > 0):
             return self._tempo * 40
